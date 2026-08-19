@@ -32,9 +32,12 @@ const entradas = Object.entries(persona);
 console.log(entradas); // [["nombre", "Juan"], ["edad", 31], ["apellido", "Gomez"]]
 
 //desestructuración → extrae propiedades del objeto en variables
-const { nombre, edad } = persona;
+const { nombre, edad } = persona; // const nombre = persona.nombre; const edad = persona.edad;
 console.log(nombre);
 
 //spread operator → copia las propiedades de un objeto a otro
 const persona2 = { ...persona, ciudad: "Madrid" };
 console.log(persona2); // { nombre: "Juan", edad: 31, apellido: "Gomez", ciudad: "Madrid" }
+
+const persona3 = {persona, ciudad: "Madrid" };
+console.log(persona3); // { persona: { nombre: "Juan", edad: 31, apellido: "Gomez" }, ciudad: "Madrid" }

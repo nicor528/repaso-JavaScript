@@ -44,6 +44,7 @@ promesa
 }).finally(() => {
     console.log("Operación finalizada");
 });
+console.log("Esto se ejecuta antes de que la promesa se resuelva");
 
 export const sumaAsync = (a, b) => {
   return new Promise((resolve) => {

@@ -22,7 +22,7 @@ console.log(frutasEnMayusculas); // ["BANANA", "MAÇÃ", "LARANJA", "UVA"]
 
 //filter → crea un nuevo array con los elementos que cumplen una condición
 const frutasConA = frutas.filter(fruta => fruta.includes("a"));
-console.log(frutasConA); // ["banana", "maçã", "laranja"]
+console.log(frutasConA); // ["banana", "maçã", "laranja", "uva"]
 
 //find → devuelve el primer elemento que cumple una condición
 const frutaConA = frutas.find(fruta => fruta.includes("a"));
@@ -30,7 +30,7 @@ console.log(frutaConA); // "banana"
 
 //indexOf → devuelve la posición del primer elemento que coincide
 const indexDeLaranja = frutas.indexOf("laranja");
-console.log(indexDeLaranja); // 2
+console.log(indexDeLaranja, frutas[indexDeLaranja]); // 2 , laranja
 
 //length → longitud del array
 console.log(frutas.length); // 4

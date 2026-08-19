@@ -10,13 +10,13 @@ const apellido = "Gomez";
 // Tipos de datos
 const texto = "Hola Mundo"; // string
 const numero = 42; // number
-const booleano = true; // boolean
+const booleano = true; // false //boolean
 const nulo = null; // null
 const indefinido = undefined; // undefined
 const decimal = 3.14; // number
 
 //Arrays
-const frutas = ["manzana", "banana", "naranja"]; // array de strings
+const frutas = ["manzana", "banana", "naranja", 22, true, ["otro array"], 22.6]; // array de strings
 console.log(frutas[0]); // manzana
 
 // objetos

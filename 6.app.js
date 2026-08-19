@@ -1,8 +1,9 @@
-import { sumar,
+import {
   restar,
   multiplicar,
   dividir,
-  sumaAsync
+  sumaAsync,
+  sumar
 } from "./5.funciones.js";
 
 console.log("Suma:", sumar(5, 3));
@@ -23,4 +24,8 @@ const resultadoPromseaAwait = async () => {
   console.log("Resultado con await:", resultado);
 };
 
+
+
 resultadoPromseaAwait();
+
+console.log("Esto se ejecuta antes de que la promesa se resuelva");
